@@ -11,7 +11,7 @@ jobs:
     uses: "sclorg/ci-actions/.github/workflows/check-readme.yml@main"
   container-tests:
     needs: check-readme
-    uses: "sclorg/ci-actions/.github/workflows/container-tests.yml@main"
+    uses: "pkhartsk/ci-actions/.github/workflows/container-tests.yml@main"
     with:
       enabled-tests: '["container","container-pytest","openshift-pytest"]'
       versions: '[ "3.9", "3.9-minimal", "3.11", "3.11-minimal", "3.12", "3.12-minimal", "3.13", "3.13-minimal", "3.14", "3.14-minimal" ]'
